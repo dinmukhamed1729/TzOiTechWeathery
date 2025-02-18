@@ -1,0 +1,23 @@
+
+### 🔹 Регистрация пользователя
+POST http://127.0.0.1:8000/api/register/
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword",
+  "city": "Москва"
+}
+
+### 🔹 Вход (получение токена)
+POST http://127.0.0.1:8000/api/login/
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+### 🔹 Получение погоды (замени {{access_token}} на токен из входа) нужно использовать именно access_token а не refresh
+GET http://127.0.0.1:8000/api/weather/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODk1NTE3LCJpYXQiOjE3Mzk4OTQ2MTcsImp0aSI6ImI3NzY1Mzg4OTcxMjRmYTZiZDM5YjgyMjk0ZGVkMGViIiwidXNlcl9pZCI6MX0.47JegAEeXsFR7IeE0eR2RerJ05fqXSj1eUalZNHHF_Q
