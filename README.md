@@ -9,8 +9,7 @@ API использует JWT-аутентификацию, кэшировани�
 
 ### 1. Клонирование репозитория
 ```sh
-git clone https://github.com/yourusername/weather-api.git
-cd weather-api
+git clone https://github.com/dinmukhamed1729/TzOiTechWeathery.git
 ```
 
 ### 2. Создание виртуального окружения и установка зависимостей
